@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+nav{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background: linear-gradient(-45deg, rgb(233, 247, 242) 0%, rgb(178, 204, 203) 100%);
+    height: 100vh;
+    width: 200px;
+}
+label.logo{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 45px;
+    font-weight: lighter;
+}
+nav ul{
+    float: left;/* 元素向右浮动 */
+    margin: 10px 200px;/* 上下 左右 */
+}
+nav ul li{
+    display: inline-block;/* 生成行内块元素 */
+    line-height: 80px;/* 行 */
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #555555;
+    font-size: 20px;
+    text-transform: uppercase;/* 控制文本的大小写：正文仅有大写  capitalize词大写开头 lowercase仅小写 */
+    padding: 7px 13px;
+    /* border-radius: 3px; */
+}
+nav a:hover{
+    /* background: lightseagreen; */
+    transition: .3s; 
+    color: #b3b3b3;
+    /* color: #c3c3c3; */
+    font-size: 21px;
+}
+nav a:active{
+    color: #888888;
+}
+nav a:visited{
+    color: #555555;
+}
+.main{
+    background-color: aquamarine;
+    width: 400px;
+    height: 500px;
+}
+.content{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    padding: 100px;
+    width: 800px;
+    background: rgb(178, 204, 203) ;
+    overflow-y:auto;
+    overflow-x:hidden; /* 设置Y轴出现滚动条，X轴隐藏 */
+}
+.content .pic{
+    /* margin:0 auto;在浏览器中水平居中 */
+    width: 250px;
+    height: 250px;
+    position: relative;
+    float: center;
+    margin:100px auto;
+    text-align: center;
+    /* border: 25px groove red; */
+}
+.content .pic h1{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* display: none; */
+    opacity: 0;
+}
+.content .pic a:hover{
+    /* background: lightseagreen; */
+    transition: .3s; 
+    color: #ffffff;
+    /* color: #c3c3c3; */
+}
+.content .pic a:active{
+    color: #ffffff;
+}
+.content .pic a:visited{
+    color: #ffffff;
+}
+.content .pic:hover h1 {
+    opacity: 1;
+    transition: .8s;
+    transform: translateY(25px);
+    /* display: block; */
+}
+.content .pic:hover img {
+    opacity: 0.2;
+    transition: .3s; 
+}
+
